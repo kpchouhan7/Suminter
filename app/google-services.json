@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "338943856936",
+    "project_id": "sumint-6bab6",
+    "storage_bucket": "sumint-6bab6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:338943856936:android:f467f610ead5da08ea801d",
+        "android_client_info": {
+          "package_name": "com.example.loginregister"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "338943856936-d3m22hlht3pr83m4hu5dhddimnvrl03f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7AHEAniN7YTcL3DsGouDjOBbvGrX2Bvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "338943856936-d3m22hlht3pr83m4hu5dhddimnvrl03f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

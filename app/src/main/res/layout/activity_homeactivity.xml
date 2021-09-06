@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".homeactivity"
+    android:background="@drawable/himage4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <Button
+            android:id="@+id/cse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="CSE"
+            android:textColor="#0E0E0E"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="ECE"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="CSBS"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button25"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="IT"
+            android:textColor="#040404"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="EEE"
+            android:textColor="#100F0F"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button27"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="ME"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="CE"
+            android:textColor="#201F1F"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+
+        <Button
+            android:id="@+id/button29"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="AE"
+            android:textColor="#0C0C0C"
+            android:textSize="18sp"
+            app:backgroundTint="#F3D936" />
+    </LinearLayout>
+</ScrollView>

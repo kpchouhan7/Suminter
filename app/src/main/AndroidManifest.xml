@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.loginregister">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Loginregister">
+        <activity android:name=".View_PDF_Files"></activity>
+        <activity android:name=".aupload" />
+        <activity android:name=".asubject" />
+        <activity android:name=".ayear" />
+        <activity android:name=".ahome" />
+        <activity android:name=".Admin_acitivity" />
+        <activity android:name=".dld" />
+        <activity android:name=".select_subject" />
+        <activity android:name=".imagepage" />
+        <activity android:name=".select_year" />
+        <activity android:name=".homeactivity" />
+        <activity android:name=".loginavtivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

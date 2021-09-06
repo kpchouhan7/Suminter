@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">loginregister</string>
+    <!--    <string name="enter_username">Enter username</string>-->
+    <string name="enter_password">Enter password</string>
+    <string name="name">Name</string>
+    <string name="retype_password">Retype password</string>
+    <string name="register">Register</string>
+    <string name="already_registered">Already registered?</string>
+    <string name="enter_username">Enter username</string>
+    <!--    <string name="enter_password">Enter password</string>-->
+    <!--    <string name="already_registered">Already registered?</string>-->
+    <!--    <string name="register">Register</string>-->
+    <!--    <string name="retype_password">Retype password</string>-->
+    <string name="enterr_username">Enterr username</string>
+    <!--    <string name="enter_password">Enter password</string>-->
+    <string name="sign_in">Sign in</string>
+</resources>
