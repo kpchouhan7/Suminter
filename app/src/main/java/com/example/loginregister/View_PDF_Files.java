@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -25,13 +26,17 @@ import java.util.List;
 public class View_PDF_Files extends AppCompatActivity {
     ListView myPDfListView;
     DatabaseReference databaseReference;
+    String message1;
     List<uploadPDF> uploadPDFS;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_view__p_d_f__files);
         myPDfListView = findViewById(R.id.myListView);
         uploadPDFS = new ArrayList<>();
+        Intent in = getIntent();
+        message1 = in.getStringExtra("id1");
 
         viewAllFiles();
         myPDfListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -40,15 +45,18 @@ public class View_PDF_Files extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 uploadPDF uploadPDF = uploadPDFS.get(position);
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setType("application/pdf");
+
                 intent.setData(Uri.parse(uploadPDF.getUrl()));
+//                Toast.makeText(View_PDF_Files.this, "Clicked", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
             }
         });
     }
 
     private void viewAllFiles() {
-        databaseReference = FirebaseDatabase.getInstance().getReference("c");
+
+
+        databaseReference = FirebaseDatabase.getInstance().getReference(message1);
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {

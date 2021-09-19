@@ -29,6 +29,8 @@ public class aupload extends AppCompatActivity {
     Button btn_upload;
     StorageReference storageReference;
     DatabaseReference databaseReference;
+    String message;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,8 +39,11 @@ public class aupload extends AppCompatActivity {
        btn_upload = findViewById(R.id.dldupload);
        editPDFName = findViewById(R.id.filename1);
 
+        Intent in = getIntent();
+        message = in.getStringExtra("id");
         storageReference = FirebaseStorage.getInstance().getReference();
-        databaseReference = FirebaseDatabase.getInstance().getReference("c");
+        databaseReference = FirebaseDatabase.getInstance().getReference(message);
+
         btn_upload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -67,7 +72,7 @@ public class aupload extends AppCompatActivity {
         final ProgressDialog progressDialog = new ProgressDialog(this);
         progressDialog.setTitle("Uploading");
         progressDialog.show();
-        StorageReference reference = storageReference.child("c/"+System.currentTimeMillis()+".pdf");
+        StorageReference reference = storageReference.child(message+"/"+System.currentTimeMillis()+".pdf");
         reference.putFile(data).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
             @Override
             public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {

@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Loginregister">
-        <activity android:name=".View_PDF_Files"></activity>
+        <activity android:name=".RegisterUser"></activity>
+        <activity android:name=".ForgotPassword" />
+        <activity android:name=".LoginPage" />
+        <activity android:name=".View_PDF_Files" />
         <activity android:name=".aupload" />
         <activity android:name=".asubject" />
         <activity android:name=".ayear" />

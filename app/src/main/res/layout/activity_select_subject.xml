@@ -4,58 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".select_subject"
-    android:background="@drawable/himage">
+    tools:context=".select_subject">
 
-    <Button
-        android:id="@+id/user_C"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="84dp"
-        android:text="Programming Through C"
-        android:textColor="#191818"
-        app:backgroundTint="#34DC28"
-        app:iconTint="#370303"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="48dp"
-        android:text="CALCULUS"
-        android:textColor="#0E0E0E"
-        app:backgroundTint="#34DC28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/user_C" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="76dp"
-        android:layout_marginLeft="76dp"
-        android:layout_marginTop="48dp"
-        android:text="Engineering Physics"
-        android:textColor="#050505"
-        app:backgroundTint="#34DC28"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="253dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="48dp"
-        android:text="BEEE"
-        android:textColor="#0E0D0D"
-        app:backgroundTint="#34DC28"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.481"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+    <ListView
+        android:id="@+id/list2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
